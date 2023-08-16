@@ -12,39 +12,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/uber-move-text" rel="stylesheet">
 </head>
 
 <body>
-
 	<header>
 		<nav>
+      </div>
 			<div class="logo">
-				<img src="photos/7733996-removebg.png" class="chicken">
+				Dhaba Wings
 			</div>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main class="main-section" style="background-image: url('photos/stock.jpg');">
+	<main id="home" class="main-section" style="background-image: url('photos/stock.jpg');">
 		<div class="content">
 			<div class="description">
-				<h1>Welcome to Dhaba Wings</h1>
+        <h1>Welcome to <span style="color: white;">dhaba</span> <span style="color: red;">WINGS</span></h1>
 				<p>Ashish & Friends</p>
 			</div>
-			<button>
-				Order Now
-			</button>
+      <button class="order-button" onclick="smoothScrollTo('#order')">
+        Order Now
+      </button>
 		</div>
 	</main>
 
+  <section id="order" class="order-section">
+    <div class="order-text">
+        Order Pickup & Delivery
+    </div>
+    <div class="delivery-containers">
+      <div class="app-images">
+        <img src="photos/uber.png" alt="Uber Eats" class="uber-png">
+        <img src="photos/doordash.png" alt="Uber Eats" class="doordash-png">
+        <img src="photos/grubhub.png" alt="Uber Eats" class="grubhub-png">
+      </div>
+      <div class="app-buttons">
+        <button class="uber" onclick="window.location.href='https://www.ubereats.com'">Order now</button>
+        <button class="doordash" onclick="window.location.href='https://www.doordash.com/store/dhaba-wings-doraville-25487194/25268947/'">Order Pickup & Delivery</button>
+        <div class="gh-button-ifrm" data-customer-id="6654080" data-restaurant-name="Dhaba Wings/ Deshi food" data-button-color="#FF8000:#ffffff" data-button-size="large" data-env="prod" data-shortlinkurl="http://menus.fyi/6654080" data-restaurant-address="5953 Buford Hwy NE, Atlanta GA, 30340" data-version="1.0" data-link-type="gh" data-target="_self"></div><script src="http://gh-prod-restaurant-shortlinks.s3-website-us-east-1.amazonaws.com/libs/scripts/iframeLib.min.js"></script>
+      </div>      
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105955.28082422796!2d-84.3443969855334!3d33.91276076444738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a7a6f75a9fdd%3A0x8503cd52fae0d25b!2sDhaba%20Wings!5e0!3m2!1sen!2sus!4v1692150349755!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+    <div class="hours">
+      <p>
+        Monday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Closed<br>
+        Tuesday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11AM-9PM<br>
+        Wednesday:&#160;&#160;&#160;&#160;11AM-9PM<br>
+        Thursday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11AM-9PM<br>
+        Friday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11AM-8:30PM<br>
+        Saturday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11AM-8:30PM<br>
+        Sunday:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;12PM-8:30PM<br>
+      </p>
+    </div>
+    <div class="contact-info">
+      <p>
+        Phone: (678) 682-9281<br>
+        Email: dhabawings@gmail.com
+      </p>
+    </div>
+  </section>
+
 	<footer>
-		<p>Copyright &#169; 2023 Dhaba Wings</p>
+		<p>Copyright &#169; 2023 Dhaba Wings Inc.</p>
 	</footer>
-  
+
+  <script src="script.js"></script>
 </body>
 
 </html>
