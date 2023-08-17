@@ -1,3 +1,3 @@
 # Dhaba-Wings
 
-Website for Dhaba Wings, to be built over Summer 2023.
+Dhaba Wings offers alluring American-Deshi fusion, with exquisite catering & takeout services for culinary delight at your fingertips.
