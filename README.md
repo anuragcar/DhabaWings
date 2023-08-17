@@ -1,3 +1,3 @@
 # Dhaba-Wings
 
-Dhaba Wings offers alluring American-Deshi fusion, with exquisite catering & takeout services for culinary delight at your fingertips.
+Dhaba Wings is an American-Deshi fusion restaurant that offers catering & takeout services, in Doraville, GA.
